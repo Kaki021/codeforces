@@ -4,9 +4,9 @@
 using namespace std;
 
 void exchange(vector<int> &nums,int l,int m,int r){
-    reverse(nums.begin()+l,nums.begin()+m);
-    reverse(nums.begin()+m+1,nums.begin()+r);
-    reverse(nums.begin()+l,nums.begin()+r);
+    reverse(nums.begin()+l,nums.begin()+m+1);
+    reverse(nums.begin()+m+1,nums.begin()+r+1);
+    reverse(nums.begin()+l,nums.begin()+r+1);
 }
 
 void merge_sort(vector<int> &nums,int l,int r){
